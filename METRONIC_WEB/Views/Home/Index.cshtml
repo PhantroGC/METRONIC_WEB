@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Animated login form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="~/Content/Content_Login/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+    @*@RenderBody()*@
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+        <form id="formulario" class="login">
+            <p class="title">Login</p>
+            <input type="text" name="usuario" id="usuario" placeholder="Username" autofocus />
+            <i class="fa fa-user"></i>
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <i class="fa fa-key"></i>
+            <a href="#">Forgot your password?</a>
+            @*<a href="@Url.Action("_Layout","Shared")" class="state">Login</a>*@
+
+            <button type="submit" @*onclick="location.href = '@Url.Action("_Layout","Shared")'"*@>
+                <i class="spinner"></i>
+                <span class="state">
+                    Login
+                </span>
+            </button>
+        </form>
+        @*<footer><a target="blank" href="http://boudra.me/">boudra.me</a></footer>*@
+
+    </div>
+</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="~/Content/Content_Login/script.js"></script>
+<script src="~/Content/Content_Login/FormularioLogin.js"></script>
+</html>
+

@@ -1,0 +1,1105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82749105-1FD2-483A-A020-41693D25FBB0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>METRONIC_WEB</RootNamespace>
+    <AssemblyName>METRONIC_WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos\PermisosRol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Content_Login\FormularioLogin.js" />
+    <Content Include="Content\Content_Login\MenuValidation.js" />
+    <Content Include="Content\Content_Login\script.js" />
+    <Content Include="Content\Content_Login\style.css" />
+    <Content Include="Content\Content_Login\validationForms.js" />
+    <Content Include="Content\css\style.bundle.css" />
+    <Content Include="Content\js\custom\documentation\base\indicator.js" />
+    <Content Include="Content\js\custom\documentation\base\rotate.js" />
+    <Content Include="Content\js\custom\documentation\charts\apexcharts.js" />
+    <Content Include="Content\js\custom\documentation\charts\chartjs.js" />
+    <Content Include="Content\js\custom\documentation\documentation.js" />
+    <Content Include="Content\js\custom\documentation\forms\clipboard.js" />
+    <Content Include="Content\js\custom\documentation\forms\flatpickr.js" />
+    <Content Include="Content\js\custom\documentation\forms\inputmask.js" />
+    <Content Include="Content\js\custom\documentation\forms\multiselectsplitter.js" />
+    <Content Include="Content\js\custom\documentation\forms\nouislider.js" />
+    <Content Include="Content\js\custom\documentation\forms\recaptcha.js" />
+    <Content Include="Content\js\custom\documentation\general\datatables\basic.js" />
+    <Content Include="Content\js\custom\documentation\general\drawer.js" />
+    <Content Include="Content\js\custom\documentation\general\scroll.js" />
+    <Content Include="Content\js\custom\documentation\general\search\basic.js" />
+    <Content Include="Content\js\custom\documentation\general\search\menu.js" />
+    <Content Include="Content\js\custom\documentation\general\search\responsive.js" />
+    <Content Include="Content\js\custom\documentation\general\stepper.js" />
+    <Content Include="Content\js\custom\documentation\general\typed.js" />
+    <Content Include="Content\js\custom\intro.js" />
+    <Content Include="Content\js\custom\modals\users-search.js" />
+    <Content Include="Content\js\custom\widgets.js" />
+    <Content Include="Content\js\scripts.bundle.js" />
+    <Content Include="Content\media\avatars\150-1.jpg" />
+    <Content Include="Content\media\avatars\150-10.jpg" />
+    <Content Include="Content\media\avatars\150-11.jpg" />
+    <Content Include="Content\media\avatars\150-12.jpg" />
+    <Content Include="Content\media\avatars\150-13.jpg" />
+    <Content Include="Content\media\avatars\150-14.jpg" />
+    <Content Include="Content\media\avatars\150-15.jpg" />
+    <Content Include="Content\media\avatars\150-16.jpg" />
+    <Content Include="Content\media\avatars\150-17.jpg" />
+    <Content Include="Content\media\avatars\150-18.jpg" />
+    <Content Include="Content\media\avatars\150-19.jpg" />
+    <Content Include="Content\media\avatars\150-2.jpg" />
+    <Content Include="Content\media\avatars\150-20.jpg" />
+    <Content Include="Content\media\avatars\150-21.jpg" />
+    <Content Include="Content\media\avatars\150-24.jpg" />
+    <Content Include="Content\media\avatars\150-25.jpg" />
+    <Content Include="Content\media\avatars\150-26.jpg" />
+    <Content Include="Content\media\avatars\150-3.jpg" />
+    <Content Include="Content\media\avatars\150-4.jpg" />
+    <Content Include="Content\media\avatars\150-5.jpg" />
+    <Content Include="Content\media\avatars\150-6.jpg" />
+    <Content Include="Content\media\avatars\150-7.jpg" />
+    <Content Include="Content\media\avatars\150-8.jpg" />
+    <Content Include="Content\media\avatars\150-9.jpg" />
+    <Content Include="Content\media\avatars\blank.png" />
+    <Content Include="Content\media\flags\abkhazia.svg" />
+    <Content Include="Content\media\flags\afghanistan.svg" />
+    <Content Include="Content\media\flags\aland-islands.svg" />
+    <Content Include="Content\media\flags\albania.svg" />
+    <Content Include="Content\media\flags\algeria.svg" />
+    <Content Include="Content\media\flags\american-samoa.svg" />
+    <Content Include="Content\media\flags\andorra.svg" />
+    <Content Include="Content\media\flags\angola.svg" />
+    <Content Include="Content\media\flags\anguilla.svg" />
+    <Content Include="Content\media\flags\antigua-and-barbuda.svg" />
+    <Content Include="Content\media\flags\argentina.svg" />
+    <Content Include="Content\media\flags\armenia.svg" />
+    <Content Include="Content\media\flags\aruba.svg" />
+    <Content Include="Content\media\flags\australia.svg" />
+    <Content Include="Content\media\flags\austria.svg" />
+    <Content Include="Content\media\flags\azerbaijan.svg" />
+    <Content Include="Content\media\flags\azores-islands.svg" />
+    <Content Include="Content\media\flags\bahamas.svg" />
+    <Content Include="Content\media\flags\bahrain.svg" />
+    <Content Include="Content\media\flags\balearic-islands.svg" />
+    <Content Include="Content\media\flags\bangladesh.svg" />
+    <Content Include="Content\media\flags\barbados.svg" />
+    <Content Include="Content\media\flags\basque-country.svg" />
+    <Content Include="Content\media\flags\belarus.svg" />
+    <Content Include="Content\media\flags\belgium.svg" />
+    <Content Include="Content\media\flags\belize.svg" />
+    <Content Include="Content\media\flags\benin.svg" />
+    <Content Include="Content\media\flags\bermuda.svg" />
+    <Content Include="Content\media\flags\bhutan.svg" />
+    <Content Include="Content\media\flags\bolivia.svg" />
+    <Content Include="Content\media\flags\bonaire.svg" />
+    <Content Include="Content\media\flags\bosnia-and-herzegovina.svg" />
+    <Content Include="Content\media\flags\botswana.svg" />
+    <Content Include="Content\media\flags\brazil.svg" />
+    <Content Include="Content\media\flags\british-columbia.svg" />
+    <Content Include="Content\media\flags\british-indian-ocean-territory.svg" />
+    <Content Include="Content\media\flags\british-virgin-islands.svg" />
+    <Content Include="Content\media\flags\brunei.svg" />
+    <Content Include="Content\media\flags\bulgaria.svg" />
+    <Content Include="Content\media\flags\burkina-faso.svg" />
+    <Content Include="Content\media\flags\burundi.svg" />
+    <Content Include="Content\media\flags\cambodia.svg" />
+    <Content Include="Content\media\flags\cameroon.svg" />
+    <Content Include="Content\media\flags\canada.svg" />
+    <Content Include="Content\media\flags\canary-islands.svg" />
+    <Content Include="Content\media\flags\cape-verde.svg" />
+    <Content Include="Content\media\flags\cayman-islands.svg" />
+    <Content Include="Content\media\flags\central-african-republic.svg" />
+    <Content Include="Content\media\flags\ceuta.svg" />
+    <Content Include="Content\media\flags\chad.svg" />
+    <Content Include="Content\media\flags\chile.svg" />
+    <Content Include="Content\media\flags\china.svg" />
+    <Content Include="Content\media\flags\christmas-island.svg" />
+    <Content Include="Content\media\flags\cocos-island.svg" />
+    <Content Include="Content\media\flags\colombia.svg" />
+    <Content Include="Content\media\flags\comoros.svg" />
+    <Content Include="Content\media\flags\cook-islands.svg" />
+    <Content Include="Content\media\flags\corsica.svg" />
+    <Content Include="Content\media\flags\costa-rica.svg" />
+    <Content Include="Content\media\flags\croatia.svg" />
+    <Content Include="Content\media\flags\cuba.svg" />
+    <Content Include="Content\media\flags\curacao.svg" />
+    <Content Include="Content\media\flags\czech-republic.svg" />
+    <Content Include="Content\media\flags\democratic-republic-of-congo.svg" />
+    <Content Include="Content\media\flags\denmark.svg" />
+    <Content Include="Content\media\flags\djibouti.svg" />
+    <Content Include="Content\media\flags\dominica.svg" />
+    <Content Include="Content\media\flags\dominican-republic.svg" />
+    <Content Include="Content\media\flags\east-timor.svg" />
+    <Content Include="Content\media\flags\ecuador.svg" />
+    <Content Include="Content\media\flags\egypt.svg" />
+    <Content Include="Content\media\flags\el-salvador.svg" />
+    <Content Include="Content\media\flags\england.svg" />
+    <Content Include="Content\media\flags\equatorial-guinea.svg" />
+    <Content Include="Content\media\flags\eritrea.svg" />
+    <Content Include="Content\media\flags\estonia.svg" />
+    <Content Include="Content\media\flags\ethiopia.svg" />
+    <Content Include="Content\media\flags\european-union.svg" />
+    <Content Include="Content\media\flags\falkland-islands.svg" />
+    <Content Include="Content\media\flags\fiji.svg" />
+    <Content Include="Content\media\flags\finland.svg" />
+    <Content Include="Content\media\flags\flag.svg" />
+    <Content Include="Content\media\flags\france.svg" />
+    <Content Include="Content\media\flags\french-polynesia.svg" />
+    <Content Include="Content\media\flags\gabon.svg" />
+    <Content Include="Content\media\flags\galapagos-islands.svg" />
+    <Content Include="Content\media\flags\gambia.svg" />
+    <Content Include="Content\media\flags\georgia.svg" />
+    <Content Include="Content\media\flags\germany.svg" />
+    <Content Include="Content\media\flags\ghana.svg" />
+    <Content Include="Content\media\flags\gibraltar.svg" />
+    <Content Include="Content\media\flags\greece.svg" />
+    <Content Include="Content\media\flags\greenland.svg" />
+    <Content Include="Content\media\flags\grenada.svg" />
+    <Content Include="Content\media\flags\guam.svg" />
+    <Content Include="Content\media\flags\guatemala.svg" />
+    <Content Include="Content\media\flags\guernsey.svg" />
+    <Content Include="Content\media\flags\guinea-bissau.svg" />
+    <Content Include="Content\media\flags\guinea.svg" />
+    <Content Include="Content\media\flags\haiti.svg" />
+    <Content Include="Content\media\flags\hawaii.svg" />
+    <Content Include="Content\media\flags\honduras.svg" />
+    <Content Include="Content\media\flags\hong-kong.svg" />
+    <Content Include="Content\media\flags\hungary.svg" />
+    <Content Include="Content\media\flags\iceland.svg" />
+    <Content Include="Content\media\flags\india.svg" />
+    <Content Include="Content\media\flags\indonesia.svg" />
+    <Content Include="Content\media\flags\iran.svg" />
+    <Content Include="Content\media\flags\iraq.svg" />
+    <Content Include="Content\media\flags\ireland.svg" />
+    <Content Include="Content\media\flags\isle-of-man.svg" />
+    <Content Include="Content\media\flags\israel.svg" />
+    <Content Include="Content\media\flags\italy.svg" />
+    <Content Include="Content\media\flags\ivory-coast.svg" />
+    <Content Include="Content\media\flags\jamaica.svg" />
+    <Content Include="Content\media\flags\japan.svg" />
+    <Content Include="Content\media\flags\jersey.svg" />
+    <Content Include="Content\media\flags\jordan.svg" />
+    <Content Include="Content\media\flags\kazakhstan.svg" />
+    <Content Include="Content\media\flags\kenya.svg" />
+    <Content Include="Content\media\flags\kiribati.svg" />
+    <Content Include="Content\media\flags\kosovo.svg" />
+    <Content Include="Content\media\flags\kuwait.svg" />
+    <Content Include="Content\media\flags\kyrgyzstan.svg" />
+    <Content Include="Content\media\flags\laos.svg" />
+    <Content Include="Content\media\flags\latvia.svg" />
+    <Content Include="Content\media\flags\lebanon.svg" />
+    <Content Include="Content\media\flags\lesotho.svg" />
+    <Content Include="Content\media\flags\liberia.svg" />
+    <Content Include="Content\media\flags\libya.svg" />
+    <Content Include="Content\media\flags\liechtenstein.svg" />
+    <Content Include="Content\media\flags\lithuania.svg" />
+    <Content Include="Content\media\flags\luxembourg.svg" />
+    <Content Include="Content\media\flags\macao.svg" />
+    <Content Include="Content\media\flags\madagascar.svg" />
+    <Content Include="Content\media\flags\madeira.svg" />
+    <Content Include="Content\media\flags\malawi.svg" />
+    <Content Include="Content\media\flags\malaysia.svg" />
+    <Content Include="Content\media\flags\maldives.svg" />
+    <Content Include="Content\media\flags\mali.svg" />
+    <Content Include="Content\media\flags\malta.svg" />
+    <Content Include="Content\media\flags\marshall-island.svg" />
+    <Content Include="Content\media\flags\martinique.svg" />
+    <Content Include="Content\media\flags\mauritania.svg" />
+    <Content Include="Content\media\flags\mauritius.svg" />
+    <Content Include="Content\media\flags\melilla.svg" />
+    <Content Include="Content\media\flags\mexico.svg" />
+    <Content Include="Content\media\flags\micronesia.svg" />
+    <Content Include="Content\media\flags\moldova.svg" />
+    <Content Include="Content\media\flags\monaco.svg" />
+    <Content Include="Content\media\flags\mongolia.svg" />
+    <Content Include="Content\media\flags\montenegro.svg" />
+    <Content Include="Content\media\flags\montserrat.svg" />
+    <Content Include="Content\media\flags\morocco.svg" />
+    <Content Include="Content\media\flags\mozambique.svg" />
+    <Content Include="Content\media\flags\myanmar.svg" />
+    <Content Include="Content\media\flags\namibia.svg" />
+    <Content Include="Content\media\flags\nato.svg" />
+    <Content Include="Content\media\flags\nauru.svg" />
+    <Content Include="Content\media\flags\nepal.svg" />
+    <Content Include="Content\media\flags\netherlands.svg" />
+    <Content Include="Content\media\flags\new-zealand.svg" />
+    <Content Include="Content\media\flags\nicaragua.svg" />
+    <Content Include="Content\media\flags\niger.svg" />
+    <Content Include="Content\media\flags\nigeria.svg" />
+    <Content Include="Content\media\flags\niue.svg" />
+    <Content Include="Content\media\flags\norfolk-island.svg" />
+    <Content Include="Content\media\flags\north-korea.svg" />
+    <Content Include="Content\media\flags\northern-cyprus.svg" />
+    <Content Include="Content\media\flags\northern-mariana-islands.svg" />
+    <Content Include="Content\media\flags\norway.svg" />
+    <Content Include="Content\media\flags\oman.svg" />
+    <Content Include="Content\media\flags\ossetia.svg" />
+    <Content Include="Content\media\flags\pakistan.svg" />
+    <Content Include="Content\media\flags\palau.svg" />
+    <Content Include="Content\media\flags\palestine.svg" />
+    <Content Include="Content\media\flags\panama.svg" />
+    <Content Include="Content\media\flags\papua-new-guinea.svg" />
+    <Content Include="Content\media\flags\paraguay.svg" />
+    <Content Include="Content\media\flags\peru.svg" />
+    <Content Include="Content\media\flags\philippines.svg" />
+    <Content Include="Content\media\flags\pitcairn-islands.svg" />
+    <Content Include="Content\media\flags\poland.svg" />
+    <Content Include="Content\media\flags\portugal.svg" />
+    <Content Include="Content\media\flags\puerto-rico.svg" />
+    <Content Include="Content\media\flags\qatar.svg" />
+    <Content Include="Content\media\flags\rapa-nui.svg" />
+    <Content Include="Content\media\flags\republic-of-macedonia.svg" />
+    <Content Include="Content\media\flags\republic-of-the-congo.svg" />
+    <Content Include="Content\media\flags\romania.svg" />
+    <Content Include="Content\media\flags\russia.svg" />
+    <Content Include="Content\media\flags\rwanda.svg" />
+    <Content Include="Content\media\flags\saba-island.svg" />
+    <Content Include="Content\media\flags\sahrawi-arab-democratic-republic.svg" />
+    <Content Include="Content\media\flags\saint-kitts-and-nevis.svg" />
+    <Content Include="Content\media\flags\samoa.svg" />
+    <Content Include="Content\media\flags\san-marino.svg" />
+    <Content Include="Content\media\flags\sao-tome-and-prince.svg" />
+    <Content Include="Content\media\flags\sardinia.svg" />
+    <Content Include="Content\media\flags\saudi-arabia.svg" />
+    <Content Include="Content\media\flags\scotland.svg" />
+    <Content Include="Content\media\flags\senegal.svg" />
+    <Content Include="Content\media\flags\serbia.svg" />
+    <Content Include="Content\media\flags\seychelles.svg" />
+    <Content Include="Content\media\flags\sicily.svg" />
+    <Content Include="Content\media\flags\sierra-leone.svg" />
+    <Content Include="Content\media\flags\singapore.svg" />
+    <Content Include="Content\media\flags\sint-eustatius.svg" />
+    <Content Include="Content\media\flags\sint-maarten.svg" />
+    <Content Include="Content\media\flags\slovakia.svg" />
+    <Content Include="Content\media\flags\slovenia.svg" />
+    <Content Include="Content\media\flags\solomon-islands.svg" />
+    <Content Include="Content\media\flags\somalia.svg" />
+    <Content Include="Content\media\flags\somaliland.svg" />
+    <Content Include="Content\media\flags\south-africa.svg" />
+    <Content Include="Content\media\flags\south-korea.svg" />
+    <Content Include="Content\media\flags\south-sudan.svg" />
+    <Content Include="Content\media\flags\spain.svg" />
+    <Content Include="Content\media\flags\sri-lanka.svg" />
+    <Content Include="Content\media\flags\st-barts.svg" />
+    <Content Include="Content\media\flags\st-lucia.svg" />
+    <Content Include="Content\media\flags\st-vincent-and-the-grenadines.svg" />
+    <Content Include="Content\media\flags\sudan.svg" />
+    <Content Include="Content\media\flags\suriname.svg" />
+    <Content Include="Content\media\flags\swaziland.svg" />
+    <Content Include="Content\media\flags\sweden.svg" />
+    <Content Include="Content\media\flags\switzerland.svg" />
+    <Content Include="Content\media\flags\syria.svg" />
+    <Content Include="Content\media\flags\taiwan.svg" />
+    <Content Include="Content\media\flags\tajikistan.svg" />
+    <Content Include="Content\media\flags\tanzania.svg" />
+    <Content Include="Content\media\flags\thailand.svg" />
+    <Content Include="Content\media\flags\tibet.svg" />
+    <Content Include="Content\media\flags\togo.svg" />
+    <Content Include="Content\media\flags\tokelau.svg" />
+    <Content Include="Content\media\flags\tonga.svg" />
+    <Content Include="Content\media\flags\transnistria.svg" />
+    <Content Include="Content\media\flags\trinidad-and-tobago.svg" />
+    <Content Include="Content\media\flags\tunisia.svg" />
+    <Content Include="Content\media\flags\turkey.svg" />
+    <Content Include="Content\media\flags\turkmenistan.svg" />
+    <Content Include="Content\media\flags\turks-and-caicos.svg" />
+    <Content Include="Content\media\flags\tuvalu-1.svg" />
+    <Content Include="Content\media\flags\tuvalu.svg" />
+    <Content Include="Content\media\flags\uganda.svg" />
+    <Content Include="Content\media\flags\uk.svg" />
+    <Content Include="Content\media\flags\ukraine.svg" />
+    <Content Include="Content\media\flags\united-arab-emirates.svg" />
+    <Content Include="Content\media\flags\united-kingdom.svg" />
+    <Content Include="Content\media\flags\united-nations.svg" />
+    <Content Include="Content\media\flags\united-states.svg" />
+    <Content Include="Content\media\flags\uruguay.svg" />
+    <Content Include="Content\media\flags\uzbekistan.svg" />
+    <Content Include="Content\media\flags\vanuatu.svg" />
+    <Content Include="Content\media\flags\vatican-city.svg" />
+    <Content Include="Content\media\flags\venezuela.svg" />
+    <Content Include="Content\media\flags\vietnam.svg" />
+    <Content Include="Content\media\flags\virgin-islands.svg" />
+    <Content Include="Content\media\flags\wales.svg" />
+    <Content Include="Content\media\flags\yemen.svg" />
+    <Content Include="Content\media\flags\zambia.svg" />
+    <Content Include="Content\media\flags\zimbabwe.svg" />
+    <Content Include="Content\media\illustrations\404-hd.png" />
+    <Content Include="Content\media\illustrations\alert-2.png" />
+    <Content Include="Content\media\illustrations\alert.png" />
+    <Content Include="Content\media\illustrations\award.png" />
+    <Content Include="Content\media\illustrations\banking.png" />
+    <Content Include="Content\media\illustrations\chat.png" />
+    <Content Include="Content\media\illustrations\checkout.png" />
+    <Content Include="Content\media\illustrations\coding.png" />
+    <Content Include="Content\media\illustrations\coming-soon.png" />
+    <Content Include="Content\media\illustrations\copy.png" />
+    <Content Include="Content\media\illustrations\counting.png" />
+    <Content Include="Content\media\illustrations\customer.png" />
+    <Content Include="Content\media\illustrations\defence.png" />
+    <Content Include="Content\media\illustrations\drawing.png" />
+    <Content Include="Content\media\illustrations\free-trial.png" />
+    <Content Include="Content\media\illustrations\header-bg-outline.png" />
+    <Content Include="Content\media\illustrations\hosting.png" />
+    <Content Include="Content\media\illustrations\networks.png" />
+    <Content Include="Content\media\illustrations\presentation-2.png" />
+    <Content Include="Content\media\illustrations\presentation.png" />
+    <Content Include="Content\media\illustrations\process-2.png" />
+    <Content Include="Content\media\illustrations\process-3.png" />
+    <Content Include="Content\media\illustrations\process-4.png" />
+    <Content Include="Content\media\illustrations\progress-hd.png" />
+    <Content Include="Content\media\illustrations\run.png" />
+    <Content Include="Content\media\illustrations\sport.png" />
+    <Content Include="Content\media\illustrations\start-soon.png" />
+    <Content Include="Content\media\illustrations\statistics-2.png" />
+    <Content Include="Content\media\illustrations\statistics.png" />
+    <Content Include="Content\media\illustrations\support-2.png" />
+    <Content Include="Content\media\illustrations\support.png" />
+    <Content Include="Content\media\illustrations\terms-1.png" />
+    <Content Include="Content\media\illustrations\terms-2.png" />
+    <Content Include="Content\media\illustrations\timeline.png" />
+    <Content Include="Content\media\illustrations\todo.png" />
+    <Content Include="Content\media\illustrations\track-order.png" />
+    <Content Include="Content\media\illustrations\user-role.png" />
+    <Content Include="Content\media\illustrations\user-welcome.png" />
+    <Content Include="Content\media\illustrations\verification.png" />
+    <Content Include="Content\media\illustrations\winner.png" />
+    <Content Include="Content\media\illustrations\work.png" />
+    <Content Include="Content\media\logos\favicon.ico" />
+    <Content Include="Content\media\logos\logo-compact.svg" />
+    <Content Include="Content\media\logos\logo-default.svg" />
+    <Content Include="Content\media\logos\logo-light.svg" />
+    <Content Include="Content\media\misc\pattern-1.jpg" />
+    <Content Include="Content\media\misc\pattern-2.jpg" />
+    <Content Include="Content\media\misc\portfolio.png" />
+    <Content Include="Content\media\misc\qr.png" />
+    <Content Include="Content\media\patterns\pattern-1.jpg" />
+    <Content Include="Content\media\products\1.png" />
+    <Content Include="Content\media\products\10.png" />
+    <Content Include="Content\media\products\11.png" />
+    <Content Include="Content\media\products\12.png" />
+    <Content Include="Content\media\products\13.png" />
+    <Content Include="Content\media\products\14.png" />
+    <Content Include="Content\media\products\15.png" />
+    <Content Include="Content\media\products\16.png" />
+    <Content Include="Content\media\products\17.png" />
+    <Content Include="Content\media\products\18.png" />
+    <Content Include="Content\media\products\19.png" />
+    <Content Include="Content\media\products\2.png" />
+    <Content Include="Content\media\products\20.png" />
+    <Content Include="Content\media\products\21.png" />
+    <Content Include="Content\media\products\22.png" />
+    <Content Include="Content\media\products\3.png" />
+    <Content Include="Content\media\products\4.png" />
+    <Content Include="Content\media\products\5.png" />
+    <Content Include="Content\media\products\6.png" />
+    <Content Include="Content\media\products\7.png" />
+    <Content Include="Content\media\products\8.png" />
+    <Content Include="Content\media\products\9.png" />
+    <Content Include="Content\media\stock\2000x800\1.jpg" />
+    <Content Include="Content\media\stock\300x270\1.jpg" />
+    <Content Include="Content\media\stock\300x270\10.jpg" />
+    <Content Include="Content\media\stock\300x270\11.jpg" />
+    <Content Include="Content\media\stock\300x270\12.jpg" />
+    <Content Include="Content\media\stock\300x270\13.jpg" />
+    <Content Include="Content\media\stock\300x270\2.jpg" />
+    <Content Include="Content\media\stock\300x270\3.jpg" />
+    <Content Include="Content\media\stock\300x270\4.jpg" />
+    <Content Include="Content\media\stock\300x270\5.jpg" />
+    <Content Include="Content\media\stock\300x270\6.jpg" />
+    <Content Include="Content\media\stock\300x270\7.jpg" />
+    <Content Include="Content\media\stock\300x270\8.jpg" />
+    <Content Include="Content\media\stock\300x270\9.jpg" />
+    <Content Include="Content\media\stock\600x400\img-1.jpg" />
+    <Content Include="Content\media\stock\600x400\img-10.jpg" />
+    <Content Include="Content\media\stock\600x400\img-11.jpg" />
+    <Content Include="Content\media\stock\600x400\img-12.jpg" />
+    <Content Include="Content\media\stock\600x400\img-13.jpg" />
+    <Content Include="Content\media\stock\600x400\img-14.jpg" />
+    <Content Include="Content\media\stock\600x400\img-15.jpg" />
+    <Content Include="Content\media\stock\600x400\img-16.jpg" />
+    <Content Include="Content\media\stock\600x400\img-17.jpg" />
+    <Content Include="Content\media\stock\600x400\img-18.jpg" />
+    <Content Include="Content\media\stock\600x400\img-19.jpg" />
+    <Content Include="Content\media\stock\600x400\img-2.jpg" />
+    <Content Include="Content\media\stock\600x400\img-20.jpg" />
+    <Content Include="Content\media\stock\600x400\img-21.jpg" />
+    <Content Include="Content\media\stock\600x400\img-22.jpg" />
+    <Content Include="Content\media\stock\600x400\img-23.jpg" />
+    <Content Include="Content\media\stock\600x400\img-24.jpg" />
+    <Content Include="Content\media\stock\600x400\img-25.jpg" />
+    <Content Include="Content\media\stock\600x400\img-26.jpg" />
+    <Content Include="Content\media\stock\600x400\img-27.jpg" />
+    <Content Include="Content\media\stock\600x400\img-28.jpg" />
+    <Content Include="Content\media\stock\600x400\img-29.jpg" />
+    <Content Include="Content\media\stock\600x400\img-3.jpg" />
+    <Content Include="Content\media\stock\600x400\img-30.jpg" />
+    <Content Include="Content\media\stock\600x400\img-31.jpg" />
+    <Content Include="Content\media\stock\600x400\img-32.jpg" />
+    <Content Include="Content\media\stock\600x400\img-33.jpg" />
+    <Content Include="Content\media\stock\600x400\img-34.jpg" />
+    <Content Include="Content\media\stock\600x400\img-35.jpg" />
+    <Content Include="Content\media\stock\600x400\img-36.jpg" />
+    <Content Include="Content\media\stock\600x400\img-37.jpg" />
+    <Content Include="Content\media\stock\600x400\img-38.jpg" />
+    <Content Include="Content\media\stock\600x400\img-39.jpg" />
+    <Content Include="Content\media\stock\600x400\img-4.jpg" />
+    <Content Include="Content\media\stock\600x400\img-40.jpg" />
+    <Content Include="Content\media\stock\600x400\img-41.jpg" />
+    <Content Include="Content\media\stock\600x400\img-42.jpg" />
+    <Content Include="Content\media\stock\600x400\img-43.jpg" />
+    <Content Include="Content\media\stock\600x400\img-44.jpg" />
+    <Content Include="Content\media\stock\600x400\img-45.jpg" />
+    <Content Include="Content\media\stock\600x400\img-46.jpg" />
+    <Content Include="Content\media\stock\600x400\img-47.jpg" />
+    <Content Include="Content\media\stock\600x400\img-48.jpg" />
+    <Content Include="Content\media\stock\600x400\img-49.jpg" />
+    <Content Include="Content\media\stock\600x400\img-5.jpg" />
+    <Content Include="Content\media\stock\600x400\img-50.jpg" />
+    <Content Include="Content\media\stock\600x400\img-51.jpg" />
+    <Content Include="Content\media\stock\600x400\img-52.jpg" />
+    <Content Include="Content\media\stock\600x400\img-53.jpg" />
+    <Content Include="Content\media\stock\600x400\img-54.jpg" />
+    <Content Include="Content\media\stock\600x400\img-55.jpg" />
+    <Content Include="Content\media\stock\600x400\img-56.jpg" />
+    <Content Include="Content\media\stock\600x400\img-57.jpg" />
+    <Content Include="Content\media\stock\600x400\img-58.jpg" />
+    <Content Include="Content\media\stock\600x400\img-59.jpg" />
+    <Content Include="Content\media\stock\600x400\img-6.jpg" />
+    <Content Include="Content\media\stock\600x400\img-60.jpg" />
+    <Content Include="Content\media\stock\600x400\img-61.jpg" />
+    <Content Include="Content\media\stock\600x400\img-62.jpg" />
+    <Content Include="Content\media\stock\600x400\img-63.jpg" />
+    <Content Include="Content\media\stock\600x400\img-64.jpg" />
+    <Content Include="Content\media\stock\600x400\img-65.jpg" />
+    <Content Include="Content\media\stock\600x400\img-66.jpg" />
+    <Content Include="Content\media\stock\600x400\img-67.jpg" />
+    <Content Include="Content\media\stock\600x400\img-68.jpg" />
+    <Content Include="Content\media\stock\600x400\img-69.jpg" />
+    <Content Include="Content\media\stock\600x400\img-7.jpg" />
+    <Content Include="Content\media\stock\600x400\img-70.jpg" />
+    <Content Include="Content\media\stock\600x400\img-71.jpg" />
+    <Content Include="Content\media\stock\600x400\img-72.jpg" />
+    <Content Include="Content\media\stock\600x400\img-73.jpg" />
+    <Content Include="Content\media\stock\600x400\img-74.jpg" />
+    <Content Include="Content\media\stock\600x400\img-8.jpg" />
+    <Content Include="Content\media\stock\600x400\img-9.jpg" />
+    <Content Include="Content\media\stock\600x600\img-1.jpg" />
+    <Content Include="Content\media\stock\600x600\img-10.jpg" />
+    <Content Include="Content\media\stock\600x600\img-11.jpg" />
+    <Content Include="Content\media\stock\600x600\img-12.jpg" />
+    <Content Include="Content\media\stock\600x600\img-13.jpg" />
+    <Content Include="Content\media\stock\600x600\img-14.jpg" />
+    <Content Include="Content\media\stock\600x600\img-15.jpg" />
+    <Content Include="Content\media\stock\600x600\img-16.jpg" />
+    <Content Include="Content\media\stock\600x600\img-17.jpg" />
+    <Content Include="Content\media\stock\600x600\img-18.jpg" />
+    <Content Include="Content\media\stock\600x600\img-2.jpg" />
+    <Content Include="Content\media\stock\600x600\img-20.jpg" />
+    <Content Include="Content\media\stock\600x600\img-21.jpg" />
+    <Content Include="Content\media\stock\600x600\img-22.jpg" />
+    <Content Include="Content\media\stock\600x600\img-23.jpg" />
+    <Content Include="Content\media\stock\600x600\img-3.jpg" />
+    <Content Include="Content\media\stock\600x600\img-4.jpg" />
+    <Content Include="Content\media\stock\600x600\img-5.jpg" />
+    <Content Include="Content\media\stock\600x600\img-6.jpg" />
+    <Content Include="Content\media\stock\600x600\img-7.jpg" />
+    <Content Include="Content\media\stock\600x600\img-8.jpg" />
+    <Content Include="Content\media\stock\600x600\img-9.jpg" />
+    <Content Include="Content\media\stock\900x600\1.jpg" />
+    <Content Include="Content\media\stock\900x600\10.jpg" />
+    <Content Include="Content\media\stock\900x600\11.jpg" />
+    <Content Include="Content\media\stock\900x600\12.jpg" />
+    <Content Include="Content\media\stock\900x600\13.jpg" />
+    <Content Include="Content\media\stock\900x600\14.jpg" />
+    <Content Include="Content\media\stock\900x600\15.jpg" />
+    <Content Include="Content\media\stock\900x600\16.jpg" />
+    <Content Include="Content\media\stock\900x600\17.jpg" />
+    <Content Include="Content\media\stock\900x600\18.jpg" />
+    <Content Include="Content\media\stock\900x600\19.jpg" />
+    <Content Include="Content\media\stock\900x600\2.jpg" />
+    <Content Include="Content\media\stock\900x600\20.jpg" />
+    <Content Include="Content\media\stock\900x600\21.jpg" />
+    <Content Include="Content\media\stock\900x600\22.jpg" />
+    <Content Include="Content\media\stock\900x600\23.jpg" />
+    <Content Include="Content\media\stock\900x600\24.jpg" />
+    <Content Include="Content\media\stock\900x600\25.jpg" />
+    <Content Include="Content\media\stock\900x600\26.jpg" />
+    <Content Include="Content\media\stock\900x600\27.jpg" />
+    <Content Include="Content\media\stock\900x600\28.jpg" />
+    <Content Include="Content\media\stock\900x600\29.jpg" />
+    <Content Include="Content\media\stock\900x600\3.jpg" />
+    <Content Include="Content\media\stock\900x600\30.jpg" />
+    <Content Include="Content\media\stock\900x600\31.jpg" />
+    <Content Include="Content\media\stock\900x600\32.jpg" />
+    <Content Include="Content\media\stock\900x600\33.jpg" />
+    <Content Include="Content\media\stock\900x600\34.jpg" />
+    <Content Include="Content\media\stock\900x600\35.jpg" />
+    <Content Include="Content\media\stock\900x600\36.jpg" />
+    <Content Include="Content\media\stock\900x600\37.jpg" />
+    <Content Include="Content\media\stock\900x600\38.jpg" />
+    <Content Include="Content\media\stock\900x600\39.jpg" />
+    <Content Include="Content\media\stock\900x600\4.jpg" />
+    <Content Include="Content\media\stock\900x600\5.jpg" />
+    <Content Include="Content\media\stock\900x600\6.jpg" />
+    <Content Include="Content\media\stock\900x600\7.jpg" />
+    <Content Include="Content\media\stock\900x600\8.jpg" />
+    <Content Include="Content\media\stock\900x600\9.jpg" />
+    <Content Include="Content\media\svg\avatars\001-boy.svg" />
+    <Content Include="Content\media\svg\avatars\002-girl.svg" />
+    <Content Include="Content\media\svg\avatars\003-girl-1.svg" />
+    <Content Include="Content\media\svg\avatars\004-boy-1.svg" />
+    <Content Include="Content\media\svg\avatars\005-girl-2.svg" />
+    <Content Include="Content\media\svg\avatars\006-girl-3.svg" />
+    <Content Include="Content\media\svg\avatars\007-boy-2.svg" />
+    <Content Include="Content\media\svg\avatars\008-boy-3.svg" />
+    <Content Include="Content\media\svg\avatars\009-boy-4.svg" />
+    <Content Include="Content\media\svg\avatars\010-girl-4.svg" />
+    <Content Include="Content\media\svg\avatars\011-boy-5.svg" />
+    <Content Include="Content\media\svg\avatars\012-girl-5.svg" />
+    <Content Include="Content\media\svg\avatars\013-girl-6.svg" />
+    <Content Include="Content\media\svg\avatars\014-girl-7.svg" />
+    <Content Include="Content\media\svg\avatars\015-boy-6.svg" />
+    <Content Include="Content\media\svg\avatars\016-boy-7.svg" />
+    <Content Include="Content\media\svg\avatars\017-girl-8.svg" />
+    <Content Include="Content\media\svg\avatars\018-girl-9.svg" />
+    <Content Include="Content\media\svg\avatars\019-girl-10.svg" />
+    <Content Include="Content\media\svg\avatars\020-girl-11.svg" />
+    <Content Include="Content\media\svg\avatars\021-boy-8.svg" />
+    <Content Include="Content\media\svg\avatars\022-girl-12.svg" />
+    <Content Include="Content\media\svg\avatars\023-girl-13.svg" />
+    <Content Include="Content\media\svg\avatars\024-boy-9.svg" />
+    <Content Include="Content\media\svg\avatars\025-girl-14.svg" />
+    <Content Include="Content\media\svg\avatars\026-boy-10.svg" />
+    <Content Include="Content\media\svg\avatars\027-girl-15.svg" />
+    <Content Include="Content\media\svg\avatars\028-girl-16.svg" />
+    <Content Include="Content\media\svg\avatars\029-boy-11.svg" />
+    <Content Include="Content\media\svg\avatars\030-girl-17.svg" />
+    <Content Include="Content\media\svg\avatars\031-boy-12.svg" />
+    <Content Include="Content\media\svg\avatars\032-boy-13.svg" />
+    <Content Include="Content\media\svg\avatars\033-girl-18.svg" />
+    <Content Include="Content\media\svg\avatars\034-boy-14.svg" />
+    <Content Include="Content\media\svg\avatars\035-boy-15.svg" />
+    <Content Include="Content\media\svg\avatars\036-girl-19.svg" />
+    <Content Include="Content\media\svg\avatars\037-girl-20.svg" />
+    <Content Include="Content\media\svg\avatars\038-boy-16.svg" />
+    <Content Include="Content\media\svg\avatars\039-girl-21.svg" />
+    <Content Include="Content\media\svg\avatars\040-boy-17.svg" />
+    <Content Include="Content\media\svg\avatars\041-girl-22.svg" />
+    <Content Include="Content\media\svg\avatars\042-girl-23.svg" />
+    <Content Include="Content\media\svg\avatars\043-boy-18.svg" />
+    <Content Include="Content\media\svg\avatars\044-boy-19.svg" />
+    <Content Include="Content\media\svg\avatars\045-boy-20.svg" />
+    <Content Include="Content\media\svg\avatars\046-girl-24.svg" />
+    <Content Include="Content\media\svg\avatars\047-girl-25.svg" />
+    <Content Include="Content\media\svg\avatars\048-boy-21.svg" />
+    <Content Include="Content\media\svg\avatars\049-boy-22.svg" />
+    <Content Include="Content\media\svg\avatars\050-girl-26.svg" />
+    <Content Include="Content\media\svg\brand-logos\adidas-9.svg" />
+    <Content Include="Content\media\svg\brand-logos\adidas.svg" />
+    <Content Include="Content\media\svg\brand-logos\airbnb-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\alcatel-mobile-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\amazon-icon-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\android-wordmark.svg" />
+    <Content Include="Content\media\svg\brand-logos\angular-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\angular-icon-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\angular-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\angular.svg" />
+    <Content Include="Content\media\svg\brand-logos\aon.svg" />
+    <Content Include="Content\media\svg\brand-logos\apigee.svg" />
+    <Content Include="Content\media\svg\brand-logos\apple-black.svg" />
+    <Content Include="Content\media\svg\brand-logos\apple-itunes.svg" />
+    <Content Include="Content\media\svg\brand-logos\aries-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\asml-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\aspnetzero.svg" />
+    <Content Include="Content\media\svg\brand-logos\atica.svg" />
+    <Content Include="Content\media\svg\brand-logos\audi-11.svg" />
+    <Content Include="Content\media\svg\brand-logos\aven.svg" />
+    <Content Include="Content\media\svg\brand-logos\avis-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\avocode-inc.svg" />
+    <Content Include="Content\media\svg\brand-logos\banco-santander-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\beats-electronics.svg" />
+    <Content Include="Content\media\svg\brand-logos\bebo.svg" />
+    <Content Include="Content\media\svg\brand-logos\behance.svg" />
+    <Content Include="Content\media\svg\brand-logos\biman-airlines-classic-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\bookingcom-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\bootstrap-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\bootstrap-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\bose.svg" />
+    <Content Include="Content\media\svg\brand-logos\bp-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\brantano.svg" />
+    <Content Include="Content\media\svg\brand-logos\bride.svg" />
+    <Content Include="Content\media\svg\brand-logos\british-council-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\brondi.svg" />
+    <Content Include="Content\media\svg\brand-logos\campingaz-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\canon-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\carrols.svg" />
+    <Content Include="Content\media\svg\brand-logos\casio.svg" />
+    <Content Include="Content\media\svg\brand-logos\caterpillar-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\citrix-6002.svg" />
+    <Content Include="Content\media\svg\brand-logos\code-lab.svg" />
+    <Content Include="Content\media\svg\brand-logos\codeigniter.svg" />
+    <Content Include="Content\media\svg\brand-logos\comcast.svg" />
+    <Content Include="Content\media\svg\brand-logos\conair.svg" />
+    <Content Include="Content\media\svg\brand-logos\costa-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\costco-wholesale-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\css-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\decathlon-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\deloitte-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\depend.svg" />
+    <Content Include="Content\media\svg\brand-logos\diesel-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\disqus.svg" />
+    <Content Include="Content\media\svg\brand-logos\django-community.svg" />
+    <Content Include="Content\media\svg\brand-logos\dribbble-icon-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\dribbble-pink.svg" />
+    <Content Include="Content\media\svg\brand-logos\duolingo.svg" />
+    <Content Include="Content\media\svg\brand-logos\dynamac.svg" />
+    <Content Include="Content\media\svg\brand-logos\ebay.svg" />
+    <Content Include="Content\media\svg\brand-logos\ember.svg" />
+    <Content Include="Content\media\svg\brand-logos\envato.svg" />
+    <Content Include="Content\media\svg\brand-logos\espacio-urbano.svg" />
+    <Content Include="Content\media\svg\brand-logos\etoys-com.svg" />
+    <Content Include="Content\media\svg\brand-logos\facebook-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\facebook-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\facebook-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\facebook-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\farmers-insurance-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\figma-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\foursquare.svg" />
+    <Content Include="Content\media\svg\brand-logos\fox-hub.svg" />
+    <Content Include="Content\media\svg\brand-logos\friday-s.svg" />
+    <Content Include="Content\media\svg\brand-logos\fujifilm.svg" />
+    <Content Include="Content\media\svg\brand-logos\funding-circle.svg" />
+    <Content Include="Content\media\svg\brand-logos\garmin-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\general-electric.svg" />
+    <Content Include="Content\media\svg\brand-logos\github-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\github-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\github-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\github.svg" />
+    <Content Include="Content\media\svg\brand-logos\gitlab.svg" />
+    <Content Include="Content\media\svg\brand-logos\google-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\google-photos.svg" />
+    <Content Include="Content\media\svg\brand-logos\google-play-store.svg" />
+    <Content Include="Content\media\svg\brand-logos\google-podcasts.svg" />
+    <Content Include="Content\media\svg\brand-logos\google-tag-manager.svg" />
+    <Content Include="Content\media\svg\brand-logos\gradiente-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\gulp-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\gulp.svg" />
+    <Content Include="Content\media\svg\brand-logos\hbo.svg" />
+    <Content Include="Content\media\svg\brand-logos\heavylift.svg" />
+    <Content Include="Content\media\svg\brand-logos\hilton-buenos-aires.svg" />
+    <Content Include="Content\media\svg\brand-logos\himel.svg" />
+    <Content Include="Content\media\svg\brand-logos\honda-7.svg" />
+    <Content Include="Content\media\svg\brand-logos\hp-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\hp-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\hp-hewlett-packard.svg" />
+    <Content Include="Content\media\svg\brand-logos\html5.svg" />
+    <Content Include="Content\media\svg\brand-logos\huggies-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\ikon-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\instagram-2-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\instagram-2016.svg" />
+    <Content Include="Content\media\svg\brand-logos\intermarche-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\invision.svg" />
+    <Content Include="Content\media\svg\brand-logos\javascript-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\javascript-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\javascript.svg" />
+    <Content Include="Content\media\svg\brand-logos\jelcz.svg" />
+    <Content Include="Content\media\svg\brand-logos\jfits.svg" />
+    <Content Include="Content\media\svg\brand-logos\jquery-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\jquery.svg" />
+    <Content Include="Content\media\svg\brand-logos\kanba.svg" />
+    <Content Include="Content\media\svg\brand-logos\keysight-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\kickstarter.svg" />
+    <Content Include="Content\media\svg\brand-logos\komatsu-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\koni-special.svg" />
+    <Content Include="Content\media\svg\brand-logos\kpmg.svg" />
+    <Content Include="Content\media\svg\brand-logos\last-fm-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\leaf.svg" />
+    <Content Include="Content\media\svg\brand-logos\leclerc-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\legrand.svg" />
+    <Content Include="Content\media\svg\brand-logos\leica-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\levis.svg" />
+    <Content Include="Content\media\svg\brand-logos\lg-electronics.svg" />
+    <Content Include="Content\media\svg\brand-logos\lidl-supermarkets.svg" />
+    <Content Include="Content\media\svg\brand-logos\linkedin.svg" />
+    <Content Include="Content\media\svg\brand-logos\lloyds-of-london-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\mastercard-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\maxis-communications-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\metro-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\metro-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\metro-by-t-mobile.svg" />
+    <Content Include="Content\media\svg\brand-logos\microsoft-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\miller-6.svg" />
+    <Content Include="Content\media\svg\brand-logos\minol.svg" />
+    <Content Include="Content\media\svg\brand-logos\mnd.svg" />
+    <Content Include="Content\media\svg\brand-logos\msn.svg" />
+    <Content Include="Content\media\svg\brand-logos\mysql-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\nasa.svg" />
+    <Content Include="Content\media\svg\brand-logos\nestle-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\new-beko-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\nike-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\node-sass.svg" />
+    <Content Include="Content\media\svg\brand-logos\noht.svg" />
+    <Content Include="Content\media\svg\brand-logos\npm.svg" />
+    <Content Include="Content\media\svg\brand-logos\ocaml.svg" />
+    <Content Include="Content\media\svg\brand-logos\oger-tours.svg" />
+    <Content Include="Content\media\svg\brand-logos\origin-4.svg" />
+    <Content Include="Content\media\svg\brand-logos\paypie.svg" />
+    <Content Include="Content\media\svg\brand-logos\pinterest-p.svg" />
+    <Content Include="Content\media\svg\brand-logos\pinterest.svg" />
+    <Content Include="Content\media\svg\brand-logos\plurk.svg" />
+    <Content Include="Content\media\svg\brand-logos\puma-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\python-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\quilosa.svg" />
+    <Content Include="Content\media\svg\brand-logos\react-native-firebase-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\react-router.svg" />
+    <Content Include="Content\media\svg\brand-logos\react.svg" />
+    <Content Include="Content\media\svg\brand-logos\redbull.svg" />
+    <Content Include="Content\media\svg\brand-logos\reddit.svg" />
+    <Content Include="Content\media\svg\brand-logos\rgb.svg" />
+    <Content Include="Content\media\svg\brand-logos\sass-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\seat-pg.svg" />
+    <Content Include="Content\media\svg\brand-logos\sentry-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\shell.svg" />
+    <Content Include="Content\media\svg\brand-logos\siplast.svg" />
+    <Content Include="Content\media\svg\brand-logos\slack-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\slack-new-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\slack.svg" />
+    <Content Include="Content\media\svg\brand-logos\smartphone.svg" />
+    <Content Include="Content\media\svg\brand-logos\snowbird.svg" />
+    <Content Include="Content\media\svg\brand-logos\soriana-logo-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\sparkpost.svg" />
+    <Content Include="Content\media\svg\brand-logos\spotify-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\spotify-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\spotify.svg" />
+    <Content Include="Content\media\svg\brand-logos\sprint-nextel.svg" />
+    <Content Include="Content\media\svg\brand-logos\stabilo.svg" />
+    <Content Include="Content\media\svg\brand-logos\strava-wordmark-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\stream-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\super-cuts.svg" />
+    <Content Include="Content\media\svg\brand-logos\suzuki-motor-corporation-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\suzuki.svg" />
+    <Content Include="Content\media\svg\brand-logos\swarm.svg" />
+    <Content Include="Content\media\svg\brand-logos\syngenta.svg" />
+    <Content Include="Content\media\svg\brand-logos\telegram-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\telegram.svg" />
+    <Content Include="Content\media\svg\brand-logos\tempstar.svg" />
+    <Content Include="Content\media\svg\brand-logos\the-blockchain-group-tbg.svg" />
+    <Content Include="Content\media\svg\brand-logos\thomas-1.svg" />
+    <Content Include="Content\media\svg\brand-logos\thuisbezorgd.svg" />
+    <Content Include="Content\media\svg\brand-logos\thule-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\ticketmaster-5.svg" />
+    <Content Include="Content\media\svg\brand-logos\tofas-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\tower.svg" />
+    <Content Include="Content\media\svg\brand-logos\treva.svg" />
+    <Content Include="Content\media\svg\brand-logos\trimble-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\trivago.svg" />
+    <Content Include="Content\media\svg\brand-logos\truman.svg" />
+    <Content Include="Content\media\svg\brand-logos\tvit.svg" />
+    <Content Include="Content\media\svg\brand-logos\twitch.svg" />
+    <Content Include="Content\media\svg\brand-logos\twitter.svg" />
+    <Content Include="Content\media\svg\brand-logos\unilever-2.svg" />
+    <Content Include="Content\media\svg\brand-logos\university-of-cambridge.svg" />
+    <Content Include="Content\media\svg\brand-logos\urw-software.svg" />
+    <Content Include="Content\media\svg\brand-logos\verizon-2015.svg" />
+    <Content Include="Content\media\svg\brand-logos\vimeo-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\vimeo.svg" />
+    <Content Include="Content\media\svg\brand-logos\visa-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\visa.svg" />
+    <Content Include="Content\media\svg\brand-logos\vodafone.svg" />
+    <Content Include="Content\media\svg\brand-logos\volicity-9.svg" />
+    <Content Include="Content\media\svg\brand-logos\vue-9.svg" />
+    <Content Include="Content\media\svg\brand-logos\vype.svg" />
+    <Content Include="Content\media\svg\brand-logos\webasto-logo.svg" />
+    <Content Include="Content\media\svg\brand-logos\webpack-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\webpack.svg" />
+    <Content Include="Content\media\svg\brand-logos\west-marine.svg" />
+    <Content Include="Content\media\svg\brand-logos\worth.svg" />
+    <Content Include="Content\media\svg\brand-logos\xing-icon.svg" />
+    <Content Include="Content\media\svg\brand-logos\youtube-3.svg" />
+    <Content Include="Content\media\svg\brand-logos\youtube-play.svg" />
+    <Content Include="Content\media\svg\brand-logos\youtube.svg" />
+    <Content Include="Content\media\svg\brand-logos\ziprecruiter-blacktext.svg" />
+    <Content Include="Content\media\svg\brand-logos\zurich-logo.svg" />
+    <Content Include="Content\media\svg\card-logos\american-express.svg" />
+    <Content Include="Content\media\svg\card-logos\mastercard.svg" />
+    <Content Include="Content\media\svg\card-logos\visa.svg" />
+    <Content Include="Content\media\svg\files\ai.svg" />
+    <Content Include="Content\media\svg\files\css.svg" />
+    <Content Include="Content\media\svg\files\doc.svg" />
+    <Content Include="Content\media\svg\files\folder-document.svg" />
+    <Content Include="Content\media\svg\files\pdf.svg" />
+    <Content Include="Content\media\svg\files\sql.svg" />
+    <Content Include="Content\media\svg\files\tif.svg" />
+    <Content Include="Content\media\svg\files\upload.svg" />
+    <Content Include="Content\media\svg\files\xml.svg" />
+    <Content Include="Content\media\svg\misc\eolic-energy.svg" />
+    <Content Include="Content\media\svg\misc\hot-air-balloon.svg" />
+    <Content Include="Content\media\svg\misc\infography.svg" />
+    <Content Include="Content\media\svg\misc\puzzle.svg" />
+    <Content Include="Content\media\svg\misc\recycling.svg" />
+    <Content Include="Content\media\svg\misc\retweet.svg" />
+    <Content Include="Content\media\svg\misc\smartphone.svg" />
+    <Content Include="Content\media\svg\misc\video-play.svg" />
+    <Content Include="Content\media\svg\payment-methods\americanexpress.svg" />
+    <Content Include="Content\media\svg\payment-methods\mastercard.svg" />
+    <Content Include="Content\media\svg\payment-methods\paypal.svg" />
+    <Content Include="Content\media\svg\payment-methods\visa.svg" />
+    <Content Include="Content\media\technology-logos\Angular.png" />
+    <Content Include="Content\media\technology-logos\Html5.png" />
+    <Content Include="Content\media\technology-logos\React.png" />
+    <Content Include="Content\media\technology-logos\VueJS.png" />
+    <Content Include="Content\plugins\custom\datatables\datatables.bundle.css" />
+    <Content Include="Content\plugins\custom\datatables\datatables.bundle.js" />
+    <Content Include="Content\plugins\custom\draggable\draggable.bundle.js" />
+    <Content Include="Content\plugins\custom\fslightbox\fslightbox.bundle.js" />
+    <Content Include="Content\plugins\custom\leaflet\leaflet.bundle.css" />
+    <Content Include="Content\plugins\custom\leaflet\leaflet.bundle.js" />
+    <Content Include="Content\plugins\custom\prismjs\prismjs.bundle.css" />
+    <Content Include="Content\plugins\custom\prismjs\prismjs.bundle.js" />
+    <Content Include="Content\plugins\custom\typedjs\typedjs.bundle.js" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-brands-400.svg" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-regular-400.svg" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-solid-900.svg" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-brands-400.svg" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-regular-400.svg" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-solid-900.svg" />
+    <Content Include="Content\plugins\global\plugins.bundle.css" />
+    <Content Include="Content\plugins\global\plugins.bundle.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-brands-400.eot" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-brands-400.ttf" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-brands-400.woff" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-brands-400.woff2" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-regular-400.eot" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-regular-400.ttf" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-regular-400.woff" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-regular-400.woff2" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-solid-900.eot" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-solid-900.ttf" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-solid-900.woff" />
+    <Content Include="Content\plugins\global\fonts\%40fortawesome\fa-solid-900.woff2" />
+    <Content Include="Content\plugins\global\fonts\bootstrap-icons\bootstrap-icons.woff" />
+    <Content Include="Content\plugins\global\fonts\bootstrap-icons\bootstrap-icons.woff2" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-brands-400.eot" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-brands-400.ttf" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-brands-400.woff" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-brands-400.woff2" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-regular-400.eot" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-regular-400.ttf" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-regular-400.woff" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-regular-400.woff2" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-solid-900.eot" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-solid-900.ttf" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-solid-900.woff" />
+    <Content Include="Content\plugins\global\fonts\line-awesome\la-solid-900.woff2" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\Home\_User.cshtml" />
+    <Content Include="Views\Home\Usuario.cshtml" />
+    <Content Include="Views\Home\SinPermiso.cshtml" />
+    <Content Include="Views\Home\Components.cshtml" />
+    <Content Include="Views\Home\faq.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\CL_EN.csproj">
+      <Project>{9eb881cf-0053-418c-b950-0757a7aeeea4}</Project>
+      <Name>CL_EN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL_DA\CL_DA.csproj">
+      <Project>{fe195775-980e-456a-9459-f3ecdaa01706}</Project>
+      <Name>CL_DA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL_NE\CL_NE.csproj">
+      <Project>{056f1661-0b11-43c1-a0c7-9bc7194a5807}</Project>
+      <Name>CL_NE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64379</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

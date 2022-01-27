@@ -1,0 +1,20 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> SISTEMA </title>
+</head>
+<body>
+    <script>
+        var BASE_PATH = "@(Request.ApplicationPath.Length > 1 ? Request.ApplicationPath + "/" : "/")";
+    </script>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
